@@ -1,0 +1,79 @@
+
+
+/*nav--------------------------------------------*/
+.navbar {
+  background-color: #1e1e1e;
+  padding: 1rem 2rem;
+  position: relative;
+  border-radius: 15px;
+  z-index: 1002; /* navbar siempre arriba */
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-wrapper a:hover {
+  text-decoration: none;
+  color: #ff4d4d;
+  font-weight: 500;
+}
+
+.links {
+  font-size: 20px;
+}
+
+/*logo -----------------------------------------*/
+.logo img {
+  height: 50px;
+}
+
+/* menu hamburguesa -----------------------------*/
+.hamburger {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1003;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+/* css de movil--------------------------------*/
+@media (max-width: 768px) {
+  .nav-wrapper {
+    position: fixed;   /* para superponer */
+    top: 0;
+    right: -100%;      /* escondido */
+    width: 70%;        /* ancho del panel */
+    height: 100vh;     /* ocupa toda la pantalla */
+    background-color: #1e1e1e;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: right 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1001;
+  }
+
+  .nav-wrapper.active {
+    right: 0; /* aparece superpuesto */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
