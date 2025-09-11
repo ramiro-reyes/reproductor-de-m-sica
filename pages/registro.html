@@ -5,12 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+
+    <!-- estilos bootstrap----------------------------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    <!-- css propio------------------------------------ -->
+
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
 <body>
     <header>
 
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../imagenes/logo.png" alt="..." />
+            </div>
+
+            <div class="nav-wrapper">
+                <a href="#">Inicio</a>
+                <a href="../pages/biblioteca.html">Bilbioteca</a>
+                <a href="../pages/iniciar-s.html">Iniciar sesion</a>
+                <a href="#">Registro</a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
     <main>
         <section class="auth-section">
@@ -37,6 +61,47 @@
         <input type="password" id="confirm-password" placeholder="••••••••" required>
       </div>
 
+<footer class="pie"> <!--pie de pagina-->
+
+        <div id="contacto">
+            <h2 class="h31">REDES</h2>
+        </div>
+        <section class="redes">
+            <!--facebook-->
+            <div class="facebook">
+                <a
+                    href="https://www.facebook.com/?stype=lo&flo=1&deoia=1&jlou=Afd4kS3qU7E5c2Pp4W4RY4ieCfbpvFqZZTbvas5oDkucuOKxIB6EphIEFVEcEQtTayHLz4RvG2dhi2SH_NYthCGkt9h3OIKyq8sPrO-azAal-A&smuh=11395&lh=Ac_lyCZ8_U20PC4KULk"><img
+                        class="facebook" src="../imagenes/facebook.png" alt="">
+                    <p class="facebook">Facebook</p>
+                </a>
+            </div>
+            <!--instagram-->
+            <div class="instagram">
+
+                <a href="https://www.instagram.com/?flo=true"><img class="instagram" src="../imagenes/instagram.png"
+                        alt="">
+                    <p class="instagram">Instagram</p>
+                </a>
+            </div>
+            <!--whatsapp-->
+            <div class="whatsapp">
+
+                <a href="https://web.whatsapp.com/"> <img class="whatsapp" src="../imagenes/whatsapp.png" alt="">
+                    <p class="whatsapp">Whatsapp</p>
+                </a>
+            </div>
+        </section>
+        <section class="politica">
+            <div>
+                <a href="politica">PLÍTICA DE PRIVACIDAD</a>
+            </div>
+            <div>
+                <a href="cookies">COOKIES</a>
+            </div>
+            <div>
+                <a href="legal">AVISO LEGAL</a>
+            </div>
+        </section>
       <button type="submit" class="btn">Registrarse</button>
       <p class="auth-footer">
         ¿Ya tienes cuenta? <a href="iniciar-s.html">Inicia sesión aquí</a>
@@ -45,6 +110,16 @@
   </div>
 </section>
     </main>
-</body>
+      
+      <!-- js ---------------------------------- -->
+        <script src="../java.js/nav.js"></script>
 
+        <!-- js botstrap ---------------------------->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+            integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+            crossorigin="anonymous"></script>
+</body>
 </html>
